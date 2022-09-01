@@ -1,0 +1,50 @@
+<html>
+
+
+    <head>
+        <metacharset="utf-8"/>
+        <title>Page d'entrée</title>
+        <script>
+
+           let answer;
+           let answerGood = 'oui';
+
+           function valider(){
+            document.getElementById("message").innerHTML = "Vous êtes autorisé à entrer";
+            window.location.href = "./test2.html";
+           } 
+
+           function refuser(){
+            alert("Cet espace est seulement autorisé pour les intervenants de Simplon");
+           }
+
+        function verifier() {
+            console.log(answer);
+            answer = document.getElementById("reponse").value;
+            console.log(answer);
+            if(answer == answerGood){
+                valider();
+            } else {
+                refuser();
+           }
+        }
+
+        </script>
+    </head>
+
+    <body>
+        
+        <h3>Vous êtes un intervenant Simplon ?</h3>
+        <input id="reponse" type="text" placeholder="entrez votre réponse oui/non">
+        <input id="bouton" type="button" value="valider" onclick="verifier()">
+        <h4 id="message"></h4>
+
+        <style>
+            body {
+                text-align: center;
+            }
+        </style>    
+
+
+    </body>
+</html>

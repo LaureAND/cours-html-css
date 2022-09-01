@@ -1,0 +1,84 @@
+h1 {
+	border:  3px black solid;
+	box-shadow: 6px 6px 0px black;
+	width: 15%;
+}
+
+p {
+	color: black;
+	text-align: justify;
+}
+
+ul {
+	color: blueviolet;
+	text-align: left;
+}
+
+body {
+	background-color: #F8E6E0;
+	font-family: arial;
+}
+
+#CV {
+	display: flex;
+}
+
+.presentation {
+	background-color: #F06C50;
+	width: 25%;
+	display: left;
+}
+
+.presentation p, h3 {
+	color: white;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid white;
+	color: white;
+}
+
+th {
+	color: white;
+	font-weight: blod;
+	border: 1px solid white;
+	border-collapse: collapse;
+}
+
+.experience {
+	margin: 10px;
+}
+
+.competences {
+	width: 30%;
+	margin: 10px;
+}
+
+.formations {
+	margin: 10px;
+}
+
+@media screen and (max-width:  1080px) {
+	#CV {
+		flex-direction: column;
+	}
+	h1 {
+		width: 25%;
+	}
+	.presentation {
+		width: 80%;
+	}
+	.experience {
+		width: 80%;
+	}
+	.competences {
+		width: 80%;
+	}
+	.formations {
+		width: 80%;
+	}
+}
